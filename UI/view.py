@@ -31,7 +31,7 @@ class View(ft.UserControl):
         row1 = ft.Row([cont, self._txtIntK, self._btnCreaGrafo], alignment=ft.MainAxisAlignment.CENTER,
                       vertical_alignment=ft.CrossAxisAlignment.END)
 
-
+        self._controller.fillDDStore()
 
         self._btnCerca = ft.ElevatedButton(text="Cerca Percorso Massimo",
                                            on_click=self._controller.handleCerca)
